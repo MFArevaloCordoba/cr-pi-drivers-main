@@ -1,0 +1,146 @@
+.formulario {
+  display: flex;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Estilos para el lado izquierdo del formulario */
+.formleft {
+  width: 45%;
+}
+
+/* Sidebar Styles */
+.formleftcontainer {
+  background-color: #0f0f13;
+  padding: 10px;
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+
+/* Image Container Styles */
+.campoImagen {
+  margin-top: 10px;
+}
+
+/* Image Styles */
+.campoImagen img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form Field Styles */
+.formleft label {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Input Styles */
+.formleft input[type="text"] {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Textarea Styles */
+.formleft textarea {
+  width: 100%;
+  height: 90px;
+  margin-top: 5px;
+}
+
+/* Select Styles */
+.formleft select {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Button Styles */
+.formleft button {
+  margin-top: 10px;
+}
+
+/* Error Text Styles */
+.errorText {
+  color: red;
+}
+
+/* Valid Icon Styles */
+.validIcon {
+  color: green;
+}
+
+/* Estilos para el lado derecho del formulario */
+.formrightcontainer {
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.308);
+  width: auto;
+  height: fit-content;
+}
+
+/* Form Field Styles */
+.formright label {
+  color: black;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Input Styles */
+.formright input[type="text"] {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Textarea Styles */
+.formright textarea {
+  width: 100%;
+  height: 90px;
+  margin-top: 5px;
+}
+
+/* Select Styles */
+.formright select {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Button Styles */
+.formright button {
+  margin-top: 10px;
+}
+
+/* Message Container Styles */
+.messageContainer {
+  margin-top: 10px;
+  color: red;
+  text-align: center;
+}
+
+/* Submit Button Styles */
+.submitButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Cancel Button Styles */
+.cancelButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}

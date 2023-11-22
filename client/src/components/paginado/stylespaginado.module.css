@@ -1,0 +1,67 @@
+.paginado {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .number {
+    margin: 0 5px;
+  }
+  
+  .number button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .number button:hover {
+    background-color: #0056b3;
+  }
+  
+  .number.active button {
+    background-color: #e10600;
+  }
+  
+  .disabled button {
+    cursor: not-allowed;
+    background-color: #ccc;
+    color: #666;
+  }
+  
+  .inicioFin {
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 5px;
+    margin-right: 5px;
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+    background-color: #ccc;
+    color: #666;
+  }
+  

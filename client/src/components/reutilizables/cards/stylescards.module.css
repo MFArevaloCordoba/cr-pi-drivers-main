@@ -1,0 +1,37 @@
+.card_container {
+    border: 2px solid #ff0000; /* Borde rojo para un toque de Fórmula 1 */
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    background-color: #f1f1f1; /* Fondo gris claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s;
+  }
+  
+  .card_container:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón para resaltar */
+  }
+  
+  .nombre {
+    color: #ff0000; /* Texto en rojo */
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  
+  .image {
+    width: 100%; /* Imagen ocupa el 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 8px;
+  }
+  
+  .teams {
+    color: #333; /* Texto de equipos en negro */
+    font-size: 1.2rem;
+    margin-top: 8px;
+  }
+  
+  .fecha {
+    color: #555; /* Texto de fecha en gris oscuro */
+    font-size: 1rem;
+    margin-top: 4px;
+  }

@@ -49,7 +49,7 @@ export const reset = () => ({
 
 export const filterOrigin = (origin) => ({
   type: FILTER_ORIGIN,
-  payload: origin,
+  payload: origin
 });
 
 

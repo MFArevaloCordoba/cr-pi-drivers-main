@@ -4,8 +4,14 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin: 0; /* Añadido para quitar el margen predeterminado del body */
-  overflow: hidden; /* Añadido para asegurarse de que no haya desbordamiento de la imagen */
+  margin: -50px; 
+  width: 100vw;
+  background-image: url('../fotospi/red-bull-rb18-red-bull-racing-rb18-2022-formula-one-world-5485x3657-9060.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  
 }
 
 .home > div {
@@ -18,31 +24,20 @@
   font-size: 18px;
   text-decoration: none;
   color: #fff;
-  background-color: #e10600; /* Rojo característico de la Fórmula 1 */
-  border: 2px solid #fff; /* Borde blanco */
+  background-color: #e10600; 
+  border: 2px solid #fff; 
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .home a:hover {
-  background-color: #fff; /* Fondo blanco al pasar el mouse */
-  color: #e10600; /* Texto rojo al pasar el mouse */
-  border-color: #e10600; /* Borde rojo al pasar el mouse */
+  background-color: #fff; 
+  color: #e10600; 
+  border-color: #e10600; 
 }
 
-/* Estilo para hacer que la imagen de fondo ocupe toda la página */
-.home::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Asegura que la imagen de fondo esté detrás del contenido */
-  background-image: url('../fotospi/red-bull-rb18-red-bull-racing-rb18-2022-formula-one-world-5485x3657-9060.jpeg');
-  background-size: cover;
-  background-position: center;
-}
+
+
 
 #loader-wrapper {
   position: absolute;

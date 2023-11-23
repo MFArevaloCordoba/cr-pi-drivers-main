@@ -68,42 +68,17 @@ const Detail = () => {
         navigate.push('/home');
       }
     } catch (error) {
-      console.error('Error al eliminar el conductor:', error.message);
-      // Puedes manejar el error de acuerdo a tus necesidades
+     
     }
   };
 
   return (
     <div className={styles.detailContainer}>
-      {driver.createInDb ? (
-        <button className={styles.deleteButton} onClick={deleteHandler}>
-          <span title='Borra el conductor de DB' role='img' aria-label='Foto' className={styles.imgIcon}>
-            🗑️
-          </span>
-        </button>
-      ) : (
-        <button className={styles.deleteButton} disabled>
-          <span title='No se puede borrar este conductor' role='img' aria-label='Foto' className={styles.imgIcon}>
-            🗑️
-          </span>
-        </button>
-      )}
+      
 
-      {/* {driver.createInDb ? (
-        <Link to={`/update/${driver.id}`} className={styles.updateButton} title='Conductor Actualizado'>
-          <span role='img' aria-label='Foto' className={styles.imgIcon}>
-            ↻
-          </span>
-        </Link>
-      ) : (
-        <button className={styles.updateButton} title='Actualizar informacion del conductor' disabled>
-          <span role='img' aria-label='Foto' className={styles.imgIcon} title='Actualizar informacion del conductor' disabled>
-            ↻
-          </span>
-        </button>
-      )} */}
+      
 
-      <Link to='/home' className={styles.closeButton} title='Cerrar'>
+    <Link to='/home' className={styles.closeButton} title='Cerrar'>
         <span role='img' aria-label='Foto' className={styles.imgIcon}>
           &#10005;
         </span>

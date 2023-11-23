@@ -284,7 +284,7 @@ const Create = () => {
                       type="submit"
                       style={{ marginTop: '10px', marginLeft: '10px' }}
                       onClick={handleSubmit}
-                      // disabled={!errors.ok || selectedTeam.length === 0}
+                      disabled={!errors.ok || selectedTeam.length === 0}
 
 
                       className={styles.submitButton}

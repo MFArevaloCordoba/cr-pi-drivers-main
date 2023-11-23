@@ -35,7 +35,7 @@ const Paginado = ({ driversPerPage, allDrivers, paginado, currentPage }) => {
       paginado(pageNumber);
       setInputPage('');
     } else {
-      setErrorInput('Only numbers within the range');
+      setErrorInput('Solo numeros en el rango.');
     }
   };
 
@@ -45,7 +45,7 @@ const Paginado = ({ driversPerPage, allDrivers, paginado, currentPage }) => {
     }
   };
 
-  const handleHomeBtn = () => {
+  const handleFirstPag = () => {
     paginado(1);
   };
 
@@ -53,7 +53,7 @@ const Paginado = ({ driversPerPage, allDrivers, paginado, currentPage }) => {
     <nav>
       <ul className={styles.paginado} style={{ display: 'flex', alignItems: 'center' }}>
         <li>
-          <button onClick={handleHomeBtn}>Home</button>
+          <button onClick={handleFirstPag}>First</button>
         </li>
         <li className={currentPage === 1 ? styles.disabled : ''}>
           <button onClick={() => paginado(currentPage - 1)} disabled={currentPage === 1}>

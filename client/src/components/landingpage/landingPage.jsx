@@ -9,11 +9,10 @@ const LandingPage = () => {
   const handleClick = () => {
     setIsLoading(true);
 
-    // Simulación de carga (puedes reemplazar esto con tu lógica real)
     setTimeout(() => {
       setIsLoading(false);
       navigate('/home');
-    }, 2000); // Simulación de una carga de 2 segundos
+    }, 2000); 
   };
 
   return (

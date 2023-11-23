@@ -1,6 +1,6 @@
 const axios = require("axios");
 const { Driver, Team } = require('../../db');
-const defaultImage = "https://i.imgur.com/Ks7SbZt.png";
+const defaultImage = "https://1000marcas.net/wp-content/uploads/2020/01/logo-F1.png";
 
 const getAllDrivers = async () => {
     const allDriversBaseD = await Driver.findAll({

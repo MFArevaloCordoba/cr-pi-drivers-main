@@ -1,7 +1,5 @@
-// const updateDriver = require('../controllers/drivers/updateDriver')
 const getDriverById = require('../controllers/drivers/getDriversById');
 const getAllDrivers = require('../controllers/drivers/getAllDrivers');
-const deleteDriver = require('../controllers/drivers/deleteDriver')
 const postDriver = require('../controllers/drivers/createNewDriver');
 
 
@@ -56,25 +54,6 @@ const driversByNameHandler = async (req,res) => {
 
 
 
-//borra los conductores
-
-
-
-const deleteDriverHandler = async (req,res) => {
-    const { id } = req.params;
-    try {
-        const driverDeteled = await deleteDriver(id.trim());
-        res.status(200).json(driverDeteled)
-    } catch (error) {
-        res.status(400).json( { error: error.message })
-    }
-}
-
-
-
-
-
-
 //post nuevo conduc.
 
 
@@ -95,28 +74,10 @@ const postDriversHandler = async (req,res) => {
 
 
 
-//actualiza condc.
 
-
-
-
-// const updateDriverHandler = async (req,res) => {
-//     const { id } = req.params;
-//     const updateData = req.body;
-
-//     try {
-//         const updatedDriver = await updateDriver(id,updateData);
-//         res.status(200).json(updatedDriver);
-//     } catch (error) {
-//         res.status(400).json({ error: error.message });
-//     }
-// }
-
-// module.exports = updateDriverHandler;
 module.exports = {
     allDriversHandler,
     driversByIdHandler,
     driversByNameHandler,
-    postDriversHandler,
-    deleteDriverHandler,
+    postDriversHandler
   };

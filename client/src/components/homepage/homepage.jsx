@@ -35,8 +35,8 @@ const Home = () => {
   const [selectedTeam, setSelectedTeam] = useState(
     localStorage.getItem("selectedTeam") || ""
   );
-  const [selectedOrigin, setSelectedOrigin] = useState(
-    localStorage.getItem("selectedOrigin") || ""
+  const [seleccionOrigen, setSelectedOrigin] = useState(
+    localStorage.getItem("seleccionOrigen") || ""
   );
   const [checkedSearch, setCheckedSearch] = useState(
     localStorage.getItem("checkedSearch") === "true"
@@ -116,18 +116,17 @@ const Home = () => {
     setCheckedSearch(false);
     localStorage.removeItem("selectedOrder");
     localStorage.removeItem("selectedTeam");
-    localStorage.removeItem("selectedOrigin");
+    localStorage.removeItem("seleccionOrigen");
     localStorage.removeItem("checkedSearch");
     dispatch(reset());
   };
 
-  const handleFilterOrigin = (event) => {
+  const handleFOrigen = (event) => {
     const origin = event.target.value;
     setSelectedOrigin(origin);
-    localStorage.setItem("selectedOrigin", origin);
+    localStorage.setItem("seleccionOrigen", origin);
     dispatch(filterOrigin(origin));
-  };
-
+};
   return (
     <div className={styles.home}>
       <div className={styles.navBar}>
@@ -137,10 +136,10 @@ const Home = () => {
           teams={teams}
           handleFTeam={handleFTeam}
           handlerReset={handlerReset}
-          handlerFilterOrigin={handleFilterOrigin}
+          handleFOrigen={handleFOrigen}
           selectedOrder={selectedOrder}
           selectedTeam={selectedTeam}
-          selectedOrigin={selectedOrigin}
+          seleccionOrigen={seleccionOrigen}
           checkedSearch={checkedSearch}
         />
         {error && <p className={styles.errores}>{error}</p>}
